@@ -28,14 +28,6 @@
 
 ---
 
-## 📸 Preview
-
-![InsightBoard Dashboard Preview](assets/dashboard-preview.png)
-
-> *Dark-themed dashboard with acid-green accents, interactive charts, and fully responsive sidebar*
-
----
-
 ## ✨ Features
 
 | Feature | Description |
