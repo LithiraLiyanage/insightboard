@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink-950: #0A0C10;
+  --ink-900: #0F1117;
+  --ink-800: #161B26;
+  --ink-700: #1E2535;
+  --ink-600: #2A3347;
+  --acid: #C8F135;
+  --glow-blue: #4DFFDF;
+  --glow-purple: #BD93F9;
+  --glow-orange: #FFB86C;
+  --glow-red: #FF6B6B;
+}
+
+html, body, #root { height: 100%; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--ink-950);
+  color: #e2e8f0;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: var(--ink-900); }
+::-webkit-scrollbar-thumb { background: var(--ink-600); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--acid); }
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-card { animation: fadeSlideUp 0.4s ease forwards; }
+
+.nav-active {
+  background: linear-gradient(90deg, rgba(200,241,53,0.12) 0%, transparent 100%);
+  border-left: 3px solid var(--acid);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.badge-completed  { background: rgba(77,255,223,0.12);  color: #4DFFDF; }
+.badge-pending    { background: rgba(255,184,108,0.12); color: #FFB86C; }
+.badge-cancelled  { background: rgba(255,107,107,0.12); color: #FF6B6B; }
+.badge-processing { background: rgba(189,147,249,0.12); color: #BD93F9; }
