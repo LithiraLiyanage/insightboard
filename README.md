@@ -236,7 +236,8 @@ Contributions are always welcome! Here's how:
 
 ---
 
-👨‍💻 Developer
+## 👨‍💻 Developer
+
 💼 Lithira Liyanage 
 
 ---
